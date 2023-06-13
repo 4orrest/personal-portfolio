@@ -26,8 +26,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            based in Sacramento, CA. Working towards creating software that
-            makes life easier and more meaningful.
+            crafting solid and scalable products with great user experiences.
           </p>
           <Link
             to="projects"
