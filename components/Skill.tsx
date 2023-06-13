@@ -3,12 +3,14 @@ import Image from "next/image";
 const skills = [
   { imgSrc: "/skills/javascript.png", altText: "JavaScript" },
   { imgSrc: "/skills/reactjs.png", altText: "React" },
+  { imgSrc: "/skills/nextJS.svg", altText: "NextJS" },
   { imgSrc: "/skills/mongodb.png", altText: "MongoDB" },
   { imgSrc: "/skills/nodejs.png", altText: "NodeJS" },
   { imgSrc: "/skills/framer-motion.svg", altText: "Framer Motion" },
   { imgSrc: "/skills/tailwind.png", altText: "Tailwind" },
   { imgSrc: "/skills/git.png", altText: "Git" },
   { imgSrc: "/skills/typescript.svg", altText: "Typescript" },
+  { imgSrc: "/skills/prisma.png", altText: "Prisma" },
   // More skills
 ];
 

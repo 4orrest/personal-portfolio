@@ -26,7 +26,7 @@ const HeroSection = () => {
             <span className="font-semibold text-teal-600">
               Software Engineer{" "}
             </span>
-            crafting solid and scalable products with great user experiences.
+            crafting scalable products with great user experiences.
           </p>
           <Link
             to="projects"
