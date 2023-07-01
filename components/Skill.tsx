@@ -1,7 +1,8 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useEffect, useRef } from "react";
 
 const skills = [
   {
@@ -57,35 +58,111 @@ const skills = [
   // More skills
 ];
 
-export default function Skills() {
+interface SkillProps {
+  skill: {
+    imgSrc: string;
+    altText: string;
+    link: string;
+  };
+  i: number;
+}
+
+const Skill: React.FC<SkillProps> = ({ skill, i }) => {
+  const controls = useAnimation();
+  const ref = useRef();
+  const isMounted = useRef(false); // new ref to track mount status
+
+  const variants = {
+    visible: {
+      opacity: 1,
+      transition: {
+        delay: i * 0.4, // adjust stagger speed
+        duration: 1, // adjust fade-in speed
+      },
+    },
+    hidden: { opacity: 0 },
+  };
+
+  useEffect(() => {
+    isMounted.current = true; // set to true after mount
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting && isMounted.current) {
+          // only start animation if component is mounted
+          controls.start("visible");
+        }
+      },
+      {
+        rootMargin: "-50px 0px",
+      }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      isMounted.current = false; // set to false before unmount
+
+      if (ref.current) {
+        observer.unobserve(ref.current);
+      }
+    };
+  }, [controls]);
+
+  return (
+    <motion.div
+      ref={ref}
+      className="flex flex-col items-center m-5"
+      custom={i}
+      variants={variants}
+      initial="hidden"
+      animate={controls}
+    >
+      {skill.link ? (
+        <a href={skill.link} target="_blank" rel="noopener noreferrer">
+          <motion.img
+            src={skill.imgSrc}
+            alt={skill.altText}
+            width={50}
+            height={50}
+            whileHover={{
+              scale: 1.1,
+              rotate: 360,
+              transition: { duration: 8 },
+            }}
+            transition={{
+              type: "spring",
+              stiffness: 100,
+              damping: 10,
+            }}
+            className="rounded-full border-solid cursor-pointer"
+          />
+        </a>
+      ) : (
+        <motion.img
+          src={skill.imgSrc}
+          alt={skill.altText}
+          width={50}
+          height={50}
+          whileHover={{ scale: 1.1, rotate: 90 }}
+          className="rounded-full border-solid cursor-pointer"
+        />
+      )}
+      <p className="mt-2 text-sm">{skill.altText}</p>
+    </motion.div>
+  );
+};
+
+const Skills = () => {
   return (
     <div className="flex flex-wrap justify-center">
-      {skills.map((skill) => (
-        <div key={skill.altText} className="flex flex-col items-center m-5">
-          {skill.link ? (
-            <a href={skill.link} target="_blank" rel="noopener noreferrer">
-              <motion.img
-                src={skill.imgSrc}
-                alt={skill.altText}
-                width={50}
-                height={50}
-                whileHover={{ scale: 1.5 }}
-                className="rounded-full border-solid cursor-pointer"
-              />
-            </a>
-          ) : (
-            <motion.img
-              src={skill.imgSrc}
-              alt={skill.altText}
-              width={50}
-              height={50}
-              whileHover={{ scale: 1.1 }}
-              className="rounded-full border-solid cursor-pointer"
-            />
-          )}
-          <p className="mt-2 text-sm">{skill.altText}</p>
-        </div>
+      {skills.map((skill, i) => (
+        <Skill key={skill.altText} skill={skill} i={i} />
       ))}
     </div>
   );
-}
+};
+
+export default Skills;

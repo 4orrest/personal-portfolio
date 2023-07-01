@@ -1,23 +1,10 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import Skill from "./Skill";
+import { motion } from "framer-motion";
 
-const skills = [
-  { imgSrc: "/skills/javascript.png", altText: "Javascript" },
-  { imgSrc: "/skills/react.png", altText: "React" },
-  { imgSrc: "/skills/nextjs.png", altText: "NextJS" },
-  // { skill: "HTML" },
-  // { skill: "CSS" },
-  // { skill: "JavaScript" },
-  // { skill: "TypeScript" },
-  // { skill: "Prisma" },
-  // { skill: "React" },
-  // { skill: "Next.js" },
-  // { skill: "Tailwind CSS" },
-  // { skill: "Git" },
-  // { skill: "GitHub" },
-  // { skill: "MongoDB" },
-];
+const bulletPoints = ["Point 1", "Point 2", "Point 3"];
 
 const AboutSection = () => {
   return (
@@ -40,16 +27,9 @@ const AboutSection = () => {
               products that <span className="font-bold">{"enable"}</span>{" "}
               others.
             </p>
-            <br />
-            <p>
-              I've been working as a product and project manager since 2017,
-              focusing the beginning of my career in new real estate technology.
-            </p>
-            <br />
-            <p>In recent years, I've grown to </p>
           </div>
-          <div className="text-center md:w-1/2 md:text-left">
-            <h1 className="text-2xl font-bold mb-6">My Skills</h1>
+          <div className="text-center md:w-1/2">
+            <h1 className="text-2xl font-bold mb-6 justify-center">Skills</h1>
             <div>
               <Skill />
             </div>
