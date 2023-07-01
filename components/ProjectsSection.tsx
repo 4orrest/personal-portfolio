@@ -55,7 +55,7 @@ const ProjectsSection = () => {
         {projects.map((project, idx) => {
           return (
             <div key={idx}>
-              <SlideUp offset="-150px 0px -150px 0px">
+              <SlideUp offset="-100px 0px -100px 0px">
                 <div className="flex flex-col md:flex-row md:space-x-12 md:items-center">
                   <motion.div
                     whileHover={{

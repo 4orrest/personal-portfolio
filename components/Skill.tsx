@@ -76,7 +76,7 @@ const Skill: React.FC<SkillProps> = ({ skill, i }) => {
     visible: {
       opacity: 1,
       transition: {
-        delay: i * 0.4, // adjust stagger speed
+        delay: i * 0.3, // adjust stagger speed
         duration: 1, // adjust fade-in speed
       },
     },
@@ -150,7 +150,9 @@ const Skill: React.FC<SkillProps> = ({ skill, i }) => {
           className="rounded-full border-solid cursor-pointer"
         />
       )}
-      <p className="mt-2 text-sm">{skill.altText}</p>
+      <p className="mt-2 text-sm font-medium dark:bg-stone-900">
+        {skill.altText}
+      </p>
     </motion.div>
   );
 };
