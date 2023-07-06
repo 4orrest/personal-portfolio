@@ -23,7 +23,7 @@ const AboutSection = () => {
             </h1>
             <p>
               Hey, my name is{" "}
-              <span className="font-bold text-teal-500">{"Forrest"}</span>. I'm
+              <span className="font-bold text-teal-500">{"Forrest"}</span>. I am
               a product-focused software engineer passionate about creating
               products that{" "}
               <span className="font-bold text-teal-500">{"enable"}</span>{" "}
@@ -43,8 +43,8 @@ const AboutSection = () => {
 
             <br />
             <p>
-              I've recently been enjoying consulting in a product and project
-              management capacity. Aside from work, I've been reigniting my
+              I have recently been enjoying consulting in a product and project
+              management capacity. Aside from work, I have been reigniting my
               passion for basketball, watching the{" "}
               <Link
                 href="https://www.youtube.com/@allin"
