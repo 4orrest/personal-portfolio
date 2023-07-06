@@ -69,7 +69,7 @@ interface SkillProps {
 
 const Skill: React.FC<SkillProps> = ({ skill, i }) => {
   const controls = useAnimation();
-  const ref = useRef();
+  const ref = useRef<HTMLDivElement | null>(null);
   const isMounted = useRef(false); // new ref to track mount status
 
   const variants = {
