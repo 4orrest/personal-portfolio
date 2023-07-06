@@ -3,6 +3,7 @@ import React from "react";
 import Image from "next/image";
 import Skill from "./Skill";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const bulletPoints = ["Point 1", "Point 2", "Point 3"];
 
@@ -18,14 +19,41 @@ const AboutSection = () => {
         <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
           <div className="md:w-1/2 ">
             <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
-              Hey!
+              Get to know me!
             </h1>
             <p>
-              my name is{" "}
+              Hey, my name is{" "}
               <span className="font-bold text-teal-500">{"Forrest"}</span>. I'm
               a product-focused software engineer passionate about creating
-              products that <span className="font-bold">{"enable"}</span>{" "}
+              products that{" "}
+              <span className="font-bold text-teal-500">{"enable"}</span>{" "}
               others.
+            </p>
+
+            <br />
+            <p>
+              I started my career as a project manager for a local real estate
+              team, eventually graduating to a{" "}
+              <span className="font-bold text-teal-500">
+                {"product management"}
+              </span>{" "}
+              role for a local startup focused on giving homeowners access to
+              the best mortgage rates in as little as 60 seconds.
+            </p>
+
+            <br />
+            <p>
+              I've recently been enjoying consulting in a product and project
+              management capacity. Aside from work, I've been reigniting my
+              passion for basketball, watching the{" "}
+              <Link
+                href="https://www.youtube.com/@allin"
+                target="_blank"
+                className="text-teal-500 font-bold"
+              >
+                All-in podcast,
+              </Link>{" "}
+              and trying to keep up with the new advancements in tech.
             </p>
           </div>
           <div className="text-center md:w-1/2">
@@ -33,13 +61,6 @@ const AboutSection = () => {
             <div>
               <Skill />
             </div>
-            {/* <Image
-              src="/hero-image.png"
-              alt=""
-              width={500}
-              height={500}
-              className="hidden md:block md:relative md:bottom-12 md:left-32 md:z-0"
-            /> */}
           </div>
         </div>
       </div>
