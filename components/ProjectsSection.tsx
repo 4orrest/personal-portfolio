@@ -32,7 +32,7 @@ const projects = [
     description: "An e-commerce store using stripe payment intents.",
     image: "/vinland.jpg",
     github: "",
-    link: "https://ecommerce-app-4orrest.vercel.app/",
+    link: "https://vinland.vercel.app/",
     technologies: [
       "NextJS",
       "Node.js",
