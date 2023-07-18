@@ -76,7 +76,7 @@ const Skill: React.FC<SkillProps> = ({ skill, i }) => {
     visible: {
       opacity: 1,
       transition: {
-        delay: i * 0.3, // adjust stagger speed
+        delay: i * 0.2, // adjust stagger speed
         duration: 1, // adjust fade-in speed
       },
     },
