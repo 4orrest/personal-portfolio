@@ -15,17 +15,6 @@ const projects = [
     image: "/DeductIt.jpg",
     github: "https://github.com/4orrest/deductIt",
     link: "https://deduct-it.vercel.app/",
-    technologies: [
-      "NextJS",
-      "Node.js",
-      "Stripe",
-      "Prisma",
-      "TypeScript",
-      "NextAuth",
-      "Tailwind",
-      "Upstash Redis",
-      "Planetscale",
-    ],
   },
   {
     name: "Vinland",
@@ -34,17 +23,6 @@ const projects = [
     image: "/vinland.jpg",
     github: "https://github.com/4orrest/Vinland",
     link: "https://vinland.vercel.app/",
-    technologies: [
-      "NextJS",
-      "Node.js",
-      "Stripe",
-      "Prisma",
-      "Railway",
-      "TypeScript",
-      "NextAuth",
-      "Tailwind",
-      "Zustand",
-    ],
   },
 ];
 
@@ -86,17 +64,7 @@ const ProjectsSection = () => {
                   </motion.div>
                   <div className="mt-8 md:mt-0 md:w-1/2">
                     <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                    <div className="mb-4">
-                      {project.technologies &&
-                        project.technologies.map((technology, idx) => (
-                          <span
-                            key={idx}
-                            className="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"
-                          >
-                            {technology}
-                          </span>
-                        ))}
-                    </div>
+                    <div className="mb-4"></div>
 
                     <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
                       {project.description}

@@ -77,7 +77,7 @@ const Skill: React.FC<SkillProps> = ({ skill, i }) => {
       opacity: 1,
       transition: {
         delay: i * 0.2, // adjust stagger speed
-        duration: 1, // adjust fade-in speed
+        duration: 0.5, // adjust fade-in speed
       },
     },
     hidden: { opacity: 0 },
@@ -128,14 +128,8 @@ const Skill: React.FC<SkillProps> = ({ skill, i }) => {
             width={50}
             height={50}
             whileHover={{
-              scale: 1.1,
-              rotate: 360,
-              transition: { duration: 8 },
-            }}
-            transition={{
-              type: "spring",
-              stiffness: 100,
-              damping: 10,
+              scale: 1.05,
+              transition: { duration: 0.3 },
             }}
             className="rounded-full border-solid cursor-pointer"
           />
