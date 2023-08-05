@@ -19,7 +19,7 @@ export const About = () => {
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I'm currently working as a product manager consultant. I also toss
+              Im currently working as a product manager consultant. I also toss
               in my ¢2 with technical implementations from time to time.
             </p>
           </Reveal>
