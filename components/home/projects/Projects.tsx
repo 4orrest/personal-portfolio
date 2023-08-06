@@ -20,7 +20,7 @@ const projects = [
   {
     title: "homeR",
     imgSrc: "project-imgs/homeR.jpg",
-    code: "https://www.github.com",
+    code: "https://github.com/4orrest/homer-readme",
     projectLink: "https://homer-psi.vercel.app/",
     tech: ["NextJS", "Tailwind", "OpenAI api", "MySQL", "Crisp"],
     description: "AI platform for the homebuying Odyssey",
