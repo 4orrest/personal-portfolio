@@ -22,8 +22,8 @@ const projects = [
     imgSrc: "project-imgs/homeR.jpg",
     code: "https://github.com/4orrest/homer-readme",
     projectLink: "https://homer-psi.vercel.app/",
-    tech: ["NextJS", "Tailwind", "OpenAI api", "MySQL", "Crisp"],
-    description: "AI platform for the homebuying Odyssey",
+    tech: ["NextJS", "Tailwind", "OpenAI api", "MySQL", "TypeScript"],
+    description: "AI platform for the homebuying journey",
     modalContent: (
       <>
         <p>AI enablement platform for first time homebuyers</p>

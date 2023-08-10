@@ -20,7 +20,7 @@ export const Stats = () => {
             <span className="chip">NodeJS</span>
             <span className="chip">Framer Motion</span>
             <span className="chip">MongoDB</span>
-            <span className="chip">GitHub</span>
+            <span className="chip">Git</span>
             <span className="chip">Jira</span>
             <span className="chip">Docker</span>
             <span className="chip">SQL</span>
