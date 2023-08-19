@@ -19,7 +19,7 @@ const experience = [
     time: "2021 - Present",
     location: "Sacramento",
     description:
-      "I help build and scale client products. Optimizing internal workflows and leading internal product management for Tyson Foods' emerging brands",
+      "Product management consultancy for small businesses, early stage start-ups and Fortune 500 companies",
     tech: ["SQL", "React", "Node", "Tailwind CSS", "Docker", "CRM", "Git"],
   },
   {
@@ -37,7 +37,7 @@ const experience = [
     time: "2018-2019",
     location: "Sacramento",
     description:
-      "Built CRM and managed marketing and sales automation. Worked on improving client user journey, especially optimizing client onboarding and lead conversion processes.",
+      "Building a better sales process between real estate agents and their clients",
     tech: ["Jira", "CRM", "Sketch", "Mailchimp", "Multiple Listing Service"],
   },
 ];
