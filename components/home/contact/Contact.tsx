@@ -21,16 +21,7 @@ export const Contact = () => {
               rel="nofollow"
             >
               Linkedin
-            </Link>{" "}
-            or{" "}
-            <Link
-              href="https://twitter.com/4orrust"
-              target="_blank"
-              rel="nofollow"
-            >
-              Twitter
-            </Link>{" "}
-            if that&apos;s more your speed.
+            </Link>
           </p>
         </Reveal>
         <Reveal width="100%">

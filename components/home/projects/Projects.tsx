@@ -60,7 +60,7 @@ const projects = [
     title: "Vinland",
     imgSrc: "project-imgs/vinland.jpg",
     code: "https://github.com/4orrest/Vinland",
-    projectLink: "https://deduct-it.vercel.app/",
+    projectLink: "https://vinland.vercel.app/",
     tech: ["NextJS", "Prisma", "Stripe", "Framer-Motion", "Zustand"],
     description:
       "An e-commerce store using stripe payment intents and a cool Viking Lottie animation.",

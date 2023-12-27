@@ -13,22 +13,14 @@ export const About = () => {
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey! I&apos;m Forrest, a product manager turned software engineer
-              from Sacramento, California.
+              Hey! I&apos;m Forrest, a product manager. I'm currently working as
+              a PM at Gemini Legal!
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              Im currently working as a product manager consultant. I also toss
-              in my ¢2 with technical implementations from time to time.
-            </p>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutText}>
-              I&apos;m looking for new positions where I can merge my love for
-              code with my passion for creating great products. If you think
-              you&apos;ve got an opening that I might like, let&apos;s connect
-              🔗
+              I love meeting new people, if you're interested in chatting - feel
+              free to reach out to me here 👇
             </p>
           </Reveal>
           <Reveal>
