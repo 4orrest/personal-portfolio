@@ -39,11 +39,7 @@ export const MyLinks = () => {
         initial={{ y: -30, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-      >
-        <Link href="https://twitter.com/4orrust" target="_blank" rel="nofollow">
-          <AiFillTwitterCircle size="2.4rem" />
-        </Link>
-      </motion.span>
+      ></motion.span>
     </div>
   );
 };

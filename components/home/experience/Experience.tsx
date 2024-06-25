@@ -19,8 +19,8 @@ const experience = [
     time: "2021 - Present",
     location: "Sacramento",
     description:
-      "Product management consultancy for small businesses, early stage start-ups and Fortune 500 companies",
-    tech: ["SQL", "React", "Node", "Tailwind CSS", "Docker", "CRM", "Git"],
+      "Product management consultancy for small businesses and early stage start-ups",
+    tech: ["React", "Node", "Tailwind CSS", "CRM", "Git"],
   },
   {
     title: "RedDoor",

@@ -14,7 +14,7 @@ export const Contact = () => {
         </Reveal>
         <Reveal width="100%">
           <p className={styles.contactCopy}>
-            Shoot me an email if you want to connect! You can also find me on{" "}
+            Send me a message on{" "}
             <Link
               href="https://www.linkedin.com/in/forrestkretchmer/"
               target="_blank"
@@ -23,14 +23,6 @@ export const Contact = () => {
               Linkedin
             </Link>
           </p>
-        </Reveal>
-        <Reveal width="100%">
-          <Link href="mailto:forrestkretchmer@gmail.com">
-            <div className={styles.contactEmail}>
-              <AiFillMail size="2.4rem" />
-              <span>forrestkretchmer@gmail.com</span>
-            </div>
-          </Link>
         </Reveal>
       </div>
     </section>

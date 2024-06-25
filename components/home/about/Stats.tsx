@@ -13,7 +13,6 @@ export const Stats = () => {
           </h4>
           <div className={styles.statGrid}>
             <span className="chip">JavaScript</span>
-            <span className="chip">TypeScript</span>
             <span className="chip">HTML</span>
             <span className="chip">CSS</span>
             <span className="chip">React</span>
@@ -22,8 +21,6 @@ export const Stats = () => {
             <span className="chip">MongoDB</span>
             <span className="chip">Git</span>
             <span className="chip">Jira</span>
-            <span className="chip">Docker</span>
-            <span className="chip">SQL</span>
           </div>
         </div>
       </Reveal>

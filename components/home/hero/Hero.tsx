@@ -17,20 +17,6 @@ export const Hero = () => {
             I&apos;m a <span>Product Manager</span>
           </h2>
         </Reveal>
-        <Reveal>
-          <p className={styles.aboutCopy}>
-            I&apos;ve spent the last 5 years building and scaling software
-            products for some pretty cool companies. I also help businesses
-            launch their MVPs 🚀
-          </p>
-        </Reveal>
-        <Reveal>
-          <StandardButton
-            onClick={() => document.getElementById("contact")?.scrollIntoView()}
-          >
-            Contact me
-          </StandardButton>
-        </Reveal>
       </div>
       <DotGrid />
     </section>
