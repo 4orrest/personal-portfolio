@@ -42,7 +42,7 @@ const projects = [
     title: "Creator Trending",
     imgSrc: "project-imgs/CT.png",
     code: "https://github.com/4orrest/deductIt",
-    projectLink: "https://deduct-it.vercel.app/",
+    projectLink: "https://creatortrending.com/",
     tech: ["Node", "NextJS", "TypeScript", "Tailwind", "Redis"],
     description: "A personal website made for an Influencer Maketing Agency",
     modalContent: (
