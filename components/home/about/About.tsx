@@ -14,7 +14,7 @@ export const About = () => {
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
               Hey! I&apos;m Forrest, a product manager. Im currently working as
-              a PM at Gemini Legal!
+              a Program Manager at Gemini Legal!
             </p>
           </Reveal>
           <Reveal>
